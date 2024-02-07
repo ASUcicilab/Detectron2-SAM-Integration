@@ -43,7 +43,7 @@ Key components of a Detectron2 training setup include:
 ## Integration
 The key to integrating a custom model lies in successfully connecting its inputs and outputs. The model's interface with the framework may not align with Detectron2's standard formats. So, 
 
-1. Input connection: customize a "DatasetMapper" to apply data augmentation and format the data to meet the model's requirements.
+1. Input connection: customize a `DatasetMapper` to apply data augmentation and format the data to meet the model's requirements.
 
 2. Output connection: Ensure the model's output aligns with Detectron2's expectations. Adjust the model's forward function such that
     * During training, it returns the loss. 
